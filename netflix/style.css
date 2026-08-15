@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hero-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/image/netflix-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 100px);
+  padding: 50px;
+}
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header img {
+  width: 150px;
+  height: 80px;
+}
+
+.header button {
+  background-color: red;
+  padding: 5px 12px;
+  border: 1px solid red;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.header button:hover {
+  background-color: rgb(95, 6, 6);
+}
+.hero-content {
+  max-width: 650px;
+  width: 100%;
+  margin: 120px auto 0;
+  text-align: center;
+}
+
+.main-heading {
+  color: white;
+  font-size: 68px;
+  font-weight: 900;
+}
+.secondary-heading {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 20px 0 30px;
+}
+.description {
+  font-size: 18px;
+  color: white;
+  padding-bottom: 10px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.email_input {
+  width: 50%;
+  padding: 20px 20px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+.email_input::placeholder {
+  color: white;
+  font-size: 16px;
+}
+.form button {
+  width: 50%;
+  padding: 20px 20px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 8px;
+}
+
+small {
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  display: block;
+}
+
+/* device breakpoints */
+/* mobile starts from 0 - 767px */
+/* tablest starts from 768px to 1280px */
+/* desktop starts 1281px */
+
+@media (max-width: 767px) {
+  .main-heading {
+    font-size: 40px;
+  }
+  .hero-section {
+    padding: 20px;
+  }
+}
